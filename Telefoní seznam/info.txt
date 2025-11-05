@@ -1,0 +1,24 @@
+2 (abc), 3 (def), 4 (ghi), 5 (jkl), 6 (mno), 7 (pqrs), 8 (tuv), 9 (wxyz), 0 (+). 
+
+
+Příklad hledání (pro demonstraci jsou nalezená písmena ve jméně jako velká):
+
+$ ./telefon <seznam.txt
+petr dvorak, 603123456
+jana novotna, 777987654
+bedrich smetana ml., 541141120
+
+$ ./telefon 12 <seznam.txt
+petr dvorak, 603123456
+bedrich smetana ml., 541141120
+
+$ ./telefon 686 <seznam.txt
+jana nOVOtna, 777987654
+
+$ ./telefon 38 <seznam.txt
+pETr DVorak, 603123456
+bedrich smETana ml., 541141120
+
+$ ./telefon 111 <seznam.txt
+Not found
+
