@@ -1,0 +1,46 @@
+.IPPcode24 #adasdsa
+DEFVAR GF@counter
+CREATEFRAME
+PUSHFRAME
+POPFRAME
+MOVE GF@counter string@ # Inicializace proměnné na prázdný řetězec
+# Jednoduchá iterace , dokud nebude splněna zadaná podmínka
+LABEL while
+# dalsi koment
+JUMPIFEQ end GF@counter string@aaa
+WRITE string@Proměnná\032GF@counter\032obsahuje\032
+WRITE GF@counter
+WRITE string@\010
+CONCAT GF@counter GF@counter string@a
+JUMP while
+LABEL end
+CALL Ahoj
+RETURN
+PUSHS GF@counter
+PUSHS int@5
+POPS GF@counter
+ADD GF@counter int@15 int@15
+SUB GF@counter int@16 int@16
+MUL GF@counter int@17 int@17
+IDIV GF@counter int@18 int@18
+LT GF@counter int@19 int@19
+GT GF@counter int@20 int@20
+EQ GF@counter int@21 int@21
+AND GF@counter bool@true int@true
+OR GF@counter bool@true int@false
+NOT GF@counter bool@true
+INT2CHAR GF@counter int@2
+STRI2INT GF@counter string@asdad int@2
+READ GF@counter bool
+CONCAT GF@counter string@ahoj string@a
+STRLEN GF@counter string@ahjo
+GETCHAR GF@counter string@ahoj string@a
+SETCHAR GF@counter string@ahoj string@a
+TYPE GF@counter int@10
+LABEL asd
+JUMP ned
+JUMPIFEQ here int@22 int@22
+JUMPIFNEQ tady int@23 int@23
+EXIT string@retezec
+DPRINT string@chyba
+BREAK
