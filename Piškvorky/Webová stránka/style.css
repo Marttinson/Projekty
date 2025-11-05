@@ -1,0 +1,55 @@
+body{
+  text-align: -webkit-center;
+  font-size: 25px;
+}
+td{
+  width: 50px;
+  height: 50px;
+  background:black;
+  color:white;
+  text-align: center;
+}
+.a{
+  background: grey;
+}
+table{
+  border:3px solid black;
+}
+.red{
+  border: 2px solid red;
+  color:red;
+  width: 40px;
+  height: 40px;
+}
+.green{
+  animation: BLIK 1s infinite;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: BLIK;
+}
+@-webkit-keyframes BLIK {
+  0%, 49% {
+    background-color: rgb(117, 209, 63);
+  }
+  50%, 100% {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    color:#000;
+    border:2px solid #000;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
